@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
     // Field Injection
     @Inject lateinit var lars: Musician
 
+    @Inject lateinit var myClass: ClassExample
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         james.sign()*/
 
         lars.sign()
+
+        println(myClass.myFunction())
 
     }
 }
